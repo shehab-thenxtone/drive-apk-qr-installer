@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "latest-apk",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-01",
+  "observability": { "enabled": true },
+  "vars": {
+    // Public Drive folder holding the APK builds (not a secret).
+    "FOLDER_ID": "1bJfWAxnTtnhhyGxvKvCO6owmmPt3qiZ3"
+  }
+  // GOOGLE_API_KEY is stored as a secret: `npx wrangler secret put GOOGLE_API_KEY`
+}
